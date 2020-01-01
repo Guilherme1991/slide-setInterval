@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Slide</title>
+</head>
+<body>
+     <div class="container">
+     	<img src="img/image-01.jpg">
+     </div>
+
+     <script>
+      let get = document.querySelector('.container img')
+      let s = 1;
+      function elemento(){
+       for(contador =1; contador<=5;contador++){
+          get.src="img/image-0"+s+".jpg";
+          
+       }
+       s++;
+       if(s >= contador){
+          	s = 1;
+          }
+       }
+       
+       window.addEventListener('load', elemento)
+        
+       setInterval(elemento, 3000)
+     </script>
+</body>
+</html>
